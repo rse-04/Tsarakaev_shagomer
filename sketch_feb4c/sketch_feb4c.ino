@@ -7,7 +7,6 @@
 TM1637 tm1637(2, 3);
 
 #include <Wire.h>
-#include <Adafruit_Sensor.h>
 #include <Adafruit_ADXL345_U.h>
 #include <MPU6050.h>
 
@@ -18,9 +17,9 @@ MPU6050 mpu;
 
 //способности: сбор данных о шагах 
 //ывод данные на экран(vivmat)
-void ecran(a){
+void ecran(int a){
   // выводим число
-  tm1637.dispNumber(2020);
+  tm1637.dispNumber(a);
   
 }
 
@@ -32,8 +31,6 @@ void knop1(){
   if (sensorVal == 0) {
     
   }
-  }
-
 }
 void knop2(){
  int sensorVal = digitalRead(KNOP2);
@@ -42,8 +39,6 @@ void knop2(){
   if (sensorVal == 0) {
       ecran(zaryad)
   }
-  }
-
 }
 #define PIN_INPUT 2
 #define PIN_LED 13
@@ -57,6 +52,7 @@ void setup() {
   pinMode(PIN_LED, OUTPUT);
     tm1637.init();  // инициализируем библиотеку
   tm1637.setBrightness(5);  // устанавливаем яркость дисплея
+  Sril.begin(9600)
 }
 Serial.begin(9600);
     if (!accel.begin()) {
@@ -69,7 +65,7 @@ void loop() {
  tm1637.init();  // инициализируем библиотеку
   tm1637.setBrightness(5);  // устанавливаем яркость дисплея
 }
-  sensors_event_t event;
+  sensors_event_t event();{
     accel.getEvent(&event);
     Serial.print("X: ");
     Serial.print(event.acceleration.x);
@@ -90,4 +86,4 @@ void loop() {
     Serial.print(mpu.getRotationZ());
     Serial.println(" deg/s");
     delay(500);
- 
+  }
