@@ -24,4 +24,6 @@
 1. сбор данных о шагах
 2. вывод данные на экран
 3. вывести данные о заряде
- ![изображение](https://github.com/rse-04/Tsarakaev_shagomer/blob/main/%D0%90%D1%80%D1%85%D0%B8%D0%B2/%D0%9F%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F/%D0%BF%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F%202.png)
+
+   
+![изображение](https://github.com/rse-04/Tsarakaev_shagomer/blob/main/%D0%90%D1%80%D1%85%D0%B8%D0%B2/%D0%9F%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F/%D0%BF%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F%202.png)
